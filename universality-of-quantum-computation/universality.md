@@ -73,7 +73,7 @@ $$
 
 In order to satisfy the constraint that $$H = H^\dagger$$, we must determine what properties are required for the eigenstates and eigenvalues.
 
-For the eigenstates, we can see what happens when we take the inner product of a state with itself. For this we use the fact that the Hermitian conjugate of a product can be evalulated by taking the Hermitian conjugate of each factor, and then reversing the order of the factors. If we also note that the Hermitian conjugate of a ket is the corresponding bra, and vice-versa, we find
+For the eigenstates, we can see what happens when we take the inner product of a state with itself. For this we use the fact that the Hermitian conjugate of a product can be evaluated by taking the Hermitian conjugate of each factor, and then reversing the order of the factors. If we also note that the Hermitian conjugate of a ket is the corresponding bra, and vice-versa, we find
 
 $$
 (|h_j\rangle\langle h_j|)^\dagger = \langle (h_j|^\dagger) ~(|h_j\rangle^\dagger) = |h_j\rangle\langle h_j|
@@ -97,7 +97,7 @@ $$
 U(\theta) = e^{i \theta H},
 $$
 
-where $$\theta$$ is an arbitrary real number. This allows us to interpolate between $$\theta=0$$ , which will be the identity matix, to $$\theta=1$$, which is $$U$$ . It also allow us to define a notion of a gate that is the square root of $$U$$: one that must be done twice to get the full effect of $$U$$. This would simply have $$\theta=1/2$$.
+where $$\theta$$ is an arbitrary real number. This allows us to interpolate between $$\theta=0$$ , which will be the identity matrix, to $$\theta=1$$, which is $$U$$ . It also allow us to define a notion of a gate that is the square root of $$U$$: one that must be done twice to get the full effect of $$U$$. This would simply have $$\theta=1/2$$.
 
 ### Pauli decomposition
 

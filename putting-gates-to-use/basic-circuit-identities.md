@@ -154,7 +154,7 @@ We can think of this as multiplying the state by $$-1$$, but only when it is $$|
 
 For a controlled-$$Z$$ gate, the control qubit must be in state $$|1\rangle$$for a $$Z$$ to be applied to the target qubit. Given the above property of $$Z$$, this only has an effect when the target is in state $$|1\rangle$$. We can therefore simply think of the controlled-$$Z$$ gate as one which multiplies the state of two qubits by $$-1$$, but only when they are in the state is $$|11\rangle$$.
 
-This new interpretation is phrased in a perfectly symmtric way, and so shows that the labels of 'control' and 'target' are not necessary for this gate.
+This new interpretation is phrased in a perfectly symmetric way, and so shows that the labels of 'control' and 'target' are not necessary for this gate.
 
 This property gives us a way to reverse the orientation of a controlled-NOT. We can first turn the controlled-NOT into a controlled-$$Z$$ by using the method described earlier: placing an `h` both before and after on the target qubit.
 
@@ -178,7 +178,7 @@ h q[c];
 
 And there we have it: we've turned around the controlled-NOT. All that is needed is a Hadamard on both qubits before and after.
 
-The rest of this subsection is dedicated to another explantion of how to turn around a CX, with a bit more math and some different insight. Feel free to skip over it.
+The rest of this subsection is dedicated to another explanation of how to turn around a CX, with a bit more math and some different insight. Feel free to skip over it.
 
 Here is another way to write the CX gate
 
@@ -214,7 +214,7 @@ $$
 
 This gives us a whole new way to interpret the effect of the controlled-NOT. The $$Z \otimes |-\rangle\langle-| $$ term addresses the parts of a superposition for which qubit t is in state $$|-\rangle$$ and then applies a $$Z$$ gate to qubit c. The other term similarly does nothing to qubit $$c$$ when qubit $$t$$ is in state $$|+\rangle.$$ 
 
-In this new interpretation, it is qubit t that acts as the control. It is the $$|+\rangle$$ and $$|-\rangle$$states that decide whether an action is performed, and that action is the gate $$Z$$. This sounds like a quite different gate to our familar controlled-NOT, and yet it is the controlled-NOT. These are two equally true descriptions of its effects.
+In this new interpretation, it is qubit t that acts as the control. It is the $$|+\rangle$$ and $$|-\rangle$$states that decide whether an action is performed, and that action is the gate $$Z$$. This sounds like a quite different gate to our familiar controlled-NOT, and yet it is the controlled-NOT. These are two equally true descriptions of its effects.
 
 Among the many uses of this property is the method to turn around a controlled-NOT. For example, consider applying a Hadamard to qubit c both before and after this controlled-NOT
 
@@ -260,7 +260,7 @@ It is similarly possible to engineer controlled-NOT gates when there is a longer
 
 We have already seen how to build controlled $$\pi$$ rotations from a single controlled-NOT gate. Now we'll look at how to build any controlled rotation.
 
-First, let's consider arbitary rotations around the y axis. Specifically, consider the following sequence of gates \(recall that `u3(theta/2,0,0)` is the way to implement an $$R_y(\theta/2)$$ rotation in OpenQASM\).
+First, let's consider arbitrary rotations around the y axis. Specifically, consider the following sequence of gates \(recall that `u3(theta/2,0,0)` is the way to implement an $$R_y(\theta/2)$$ rotation in OpenQASM\).
 
 ```c
 u3(theta/2,0,0) q[t];
@@ -309,7 +309,7 @@ The Toffoli gate is a three qubit gate with two controls and one target. It perf
 ccx q[c], q[t];
 ```
 
-To see how to build it from single and two qubit gates it is actually easiest to show how to build something even more general: an arbitary controlled-controlled-U for any single qubit rotation U. For this we need to define controlled versions of $$V = \sqrt{U}$$ and $$V^\dagger$$. In the OpenQASM code below, we assume that subroutines `cv` and `cvdg` have been defined for these, respectively. The controls are qubits a and b, and the target is qubit t.
+To see how to build it from single and two qubit gates it is actually easiest to show how to build something even more general: an arbitrary controlled-controlled-U for any single qubit rotation U. For this we need to define controlled versions of $$V = \sqrt{U}$$ and $$V^\dagger$$. In the OpenQASM code below, we assume that subroutines `cv` and `cvdg` have been defined for these, respectively. The controls are qubits a and b, and the target is qubit t.
 
 ```c
 cv q[b], q[t];
@@ -352,9 +352,9 @@ For the state $$|00\rangle$$ on the two controls, this does nothing to the targe
 
 The qubits in current devices are subject to noise, which basically consists of gates that are done by mistake. Simple things like temperature, stray magnetic fields or activity on neighbouring qubits can make things happen that we didn't intend.
 
-For large applications of quantum computers, it will be neccesary to encode our qubits in a way that protects them from this noise. This is done by making gates much harder to do by mistake, or to implement in a manner that is slightly wrong.
+For large applications of quantum computers, it will be necessary to encode our qubits in a way that protects them from this noise. This is done by making gates much harder to do by mistake, or to implement in a manner that is slightly wrong.
 
-This is unfortunate for the single qubit rotations  $$R_x(\theta)$$, $$R_y(\theta)$$ and $$R_z(\theta)$$. It is impossible to implent an angle $$\theta$$ with perfect accuracy, such that you are sure that you are not accidentally implementing something like $$\theta + 0.0000001$$. There will always be a limit to the accuracy we can achieve. This will always be larger than is tolarable for large circuits where the imperfections will build up. We will therefore not be able to implement these rotations directly in fault-tolerant quantum computers, but will instead need to build them in a much more deliberate manner.
+This is unfortunate for the single qubit rotations  $$R_x(\theta)$$, $$R_y(\theta)$$ and $$R_z(\theta)$$. It is impossible to implent an angle $$\theta$$ with perfect accuracy, such that you are sure that you are not accidentally implementing something like $$\theta + 0.0000001$$. There will always be a limit to the accuracy we can achieve. This will always be larger than is tolerable for large circuits where the imperfections will build up. We will therefore not be able to implement these rotations directly in fault-tolerant quantum computers, but will instead need to build them in a much more deliberate manner.
 
 Fault-tolerant schemes typical perform these rotations using multiple applications of just two gates: $$H$$ and $$T$$.
 
@@ -389,7 +389,7 @@ Since this is a single qubit gate, we can think of it as a rotation around the B
 
 The crucial property of the angle for this rotation is that it is irrational. You can prove this yourself with a bunch of math, but you can also see the irrationality in action by applying the gate. Repeating it n times results in a rotation around the same axis by a different angle. Due to to the irrationality, the angles that result from different repetitions will never be the same.
 
-We can use this to our advantage. Each angle will be somewhere between $$0$$ and $$2\pi$$. Let's split this iterval up into $$n$$ slices of width $$2\pi/n$$. For each repetition, the resulting angle will fall in one of these slices. If we look at the angles for the first $$n+1$$ repetitions, it must be true that at least one slice contains two of these angles. Let's use $$n_1$$ to denote the number of repetitions required for the first, and $$n_2$$ for the second.
+We can use this to our advantage. Each angle will be somewhere between $$0$$ and $$2\pi$$. Let's split this interval up into $$n$$ slices of width $$2\pi/n$$. For each repetition, the resulting angle will fall in one of these slices. If we look at the angles for the first $$n+1$$ repetitions, it must be true that at least one slice contains two of these angles. Let's use $$n_1$$ to denote the number of repetitions required for the first, and $$n_2$$ for the second.
 
 With this, we can prove something about the angle for $$n_2-n_1$$ repetitions. This is effectively the same as doing $$n_2$$ repetitions, followed by the inverse of $$n_1$$ repetitions. Since the angles for these are not equal \(because of the irrationality\) but also differ by no greater than $$2\pi/n$$ \(because they correspond to the same slice\) the angle for $$n_2-n_1$$ repetitions satisfies
 

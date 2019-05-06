@@ -34,7 +34,7 @@ $$
 
 There, their job was to help us make calculations regarding measurements. But since these matrices are unitary, and therefore define a reversible quantum operation, this additional interpretation of them as gates is also possible.
 
-Note that here we referred to these gates as $$X$$, $$Y$$and $$Z$$ and `x`, `y` and `z`, depending on whether we were talking about their matrix represetation or which the way they are written in OpenQASM. Typically we will use the style of $$X$$, $$Y$$and $$Z$$when referring to gates in text or equations, and `x`, `y` and `z` when writing QASM code.
+Note that here we referred to these gates as $$X$$, $$Y$$and $$Z$$ and `x`, `y` and `z`, depending on whether we were talking about their matrix representation or which the way they are written in OpenQASM. Typically we will use the style of $$X$$, $$Y$$and $$Z$$when referring to gates in text or equations, and `x`, `y` and `z` when writing QASM code.
 
 ### Hadamard and S
 
@@ -159,7 +159,7 @@ cx q[0],q[1];       \\ CNOT controlled on qubit 0 with qubit 1 as target
 ccx q[0],q[1],q[0]; \\ Toffoli controlled on qubits 0 and 1 with qubit 2 as target
 ```
 
-We can also interpret the CNOT as performing an $$X$$ on its target qubit, but only when it's control qubit is in state $$|1\rangle$$, and doing nothing when the control is in state $$|0\rangle$$. We can similarly define gates that work in the same way, but instead peform a $$Y$$ or $$Z$$ on the target qubit depending on the$$|0\rangle$$and $$|1\rangle$$ states of the control.
+We can also interpret the CNOT as performing an $$X$$ on its target qubit, but only when it's control qubit is in state $$|1\rangle$$, and doing nothing when the control is in state $$|0\rangle$$. We can similarly define gates that work in the same way, but instead perform a $$Y$$ or $$Z$$ on the target qubit depending on the$$|0\rangle$$and $$|1\rangle$$ states of the control.
 
 ```c
 cy q[0],q[1];  \\ controlled-Y, controlled on qubit 0 with qubit 1 as target

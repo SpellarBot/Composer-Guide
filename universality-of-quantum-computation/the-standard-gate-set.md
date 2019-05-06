@@ -10,7 +10,7 @@ $$
 H = |+\rangle\langle0|~+~ |-\rangle\langle1| = |0\rangle\langle+|~+~ |1\rangle\langle+|.
 $$
 
-This gate is expressed above using outer products, as desribed in the last section. When expressed in this form, it's famous effect becomes obvious: it takes $$|0\rangle$$, and rotates it to $$|+\rangle$$. More generally, we can say it rotates the basis states of the z measurement, $$\{ |0\rangle,|1\rangle \}$$ , to the basis states of the x measurement,  $$\{ |+\rangle,|-\rangle \}$$, and vice-versa.
+This gate is expressed above using outer products, as described in the last section. When expressed in this form, it's famous effect becomes obvious: it takes $$|0\rangle$$, and rotates it to $$|+\rangle$$. More generally, we can say it rotates the basis states of the z measurement, $$\{ |0\rangle,|1\rangle \}$$ , to the basis states of the x measurement,  $$\{ |+\rangle,|-\rangle \}$$, and vice-versa.
 
 This effect of the Hadamard is to move information around a qubit. It swaps any information that would previously be accessed by an x measurement with that accessed by a z measurement. Indeed, one of the most important jobs of the Hadamard is to do exactly this. We use it when wanting to make an x measurement, given that we can only physically make z measurements.
 

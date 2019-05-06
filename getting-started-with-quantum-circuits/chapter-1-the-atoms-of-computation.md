@@ -206,7 +206,7 @@ To see what we need, let’s take another look at what our half adder needs to d
 
 The rightmost bit in all four of these answers is completely determined by whether the two bits we are adding are the same or different. So for `0+0` and `1+1`, where the two bits are equal, the rightmost bit of the answer comes out `0`. For `0+1` and `1+0`, where we are adding different bit values, the rightmost bit is `1`.
 
-To get this part of our solution correct, we need something that can figure out whether two bits are different or not. Traditonally, in the study of digital computation, this is called an _OR gate_.
+To get this part of our solution correct, we need something that can figure out whether two bits are different or not. Traditionally, in the study of digital computation, this is called an _OR gate_.
 
 In quantum computers, and so also on the composer, the job of the OR gate is done by the _controlled-NOT_ gate. Since that's quite a long name, we usually just call it the _CNOT_.
 

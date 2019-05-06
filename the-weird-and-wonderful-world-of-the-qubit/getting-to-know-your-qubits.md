@@ -55,7 +55,7 @@ $$
 \begin{pmatrix} a_0 & a_1 \end{pmatrix} \begin{pmatrix} b_0 \\ b_1 \end{pmatrix}= a_0~b_0 + a_0~b_1.
 $$
 
-Note that the right hand side of this equation contains only normal numbers being multipled and added in a normal way. The inner product of two vectors therefore yields just a number. As we'll see, we can interpret this as a measure of how similar the vectors are.
+Note that the right hand side of this equation contains only normal numbers being multiplied and added in a normal way. The inner product of two vectors therefore yields just a number. As we'll see, we can interpret this as a measure of how similar the vectors are.
 
 The inner product requires the first vector to be a bra and the second to be a ket. In fact, this is where their names come from. Dirac wanted to write the inner product as something like$$\langle a | b \rangle$$, which looks like the names of the vectors enclosed in brackets. Then he worked backwards to split the _bracket_ into a _bra_ and a _ket_.
 
@@ -72,7 +72,7 @@ Here we are using a concise way of writing the inner products where, for example
 
 So far we've looked at states for which the z measurement has a certain outcome. But there are also states for which the outcome of a z measurement is equally likely to be `0` or `1`. What might these look like in the language of vectors?
 
-A good place to start would be something like $$|0\rangle + |1\rangle$$ , since this inclues both $$|0\rangle$$and $$|1\rangle$$ with no particular bias towards either. But let's hedge our bets a little and multiply it by some number $$x$$ .
+A good place to start would be something like $$|0\rangle + |1\rangle$$ , since this includes both $$|0\rangle$$and $$|1\rangle$$ with no particular bias towards either. But let's hedge our bets a little and multiply it by some number $$x$$ .
 
 $$
 x ~ (|0\rangle + |1\rangle) = \begin{pmatrix} x \\ x \end{pmatrix}

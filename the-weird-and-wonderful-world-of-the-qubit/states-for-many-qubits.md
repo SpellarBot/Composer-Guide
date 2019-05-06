@@ -8,7 +8,7 @@ $$
 |a\rangle = a_{00}|00\rangle+ a_{01}|01\rangle+a_{10}|10\rangle+ a_{11}|11\rangle = \begin{pmatrix} a_{00} \\ a_{01} \\ a_{10} \\ a_{11} \end{pmatrix}.
 $$
 
-As in the single qubit case, the elements of this vector are complex numbers. We require the state to be normalized so that $$\langle a|a\rangle = 1$$, and probabilites are given by the Born rule \( $$p_{00}^{zz} = |\langle00|a\rangle |^2$$, etc\).
+As in the single qubit case, the elements of this vector are complex numbers. We require the state to be normalized so that $$\langle a|a\rangle = 1$$, and probabilities are given by the Born rule \( $$p_{00}^{zz} = |\langle00|a\rangle |^2$$, etc\).
 
 Suppose we have two qubits, with one in state $$|a\rangle = a_0 |0\rangle + a_1 |1\rangle$$ and the other in state $$|b\rangle = b_0 |0\rangle + b_1 |1\rangle$$, and we want to create the two qubit state that describes them both. This can be constructed using the [tensor product](https://en.wikipedia.org/wiki/Tensor_product#Intuitive_motivation_and_the_concrete_tensor_product),
 

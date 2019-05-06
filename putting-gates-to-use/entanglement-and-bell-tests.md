@@ -24,7 +24,7 @@ $$
 C = \langle AB\rangle-\langle AB'\rangle+\langle A'B\rangle+\langle A'B'\rangle
 $$
 
-This has the property the property that correlations provided by local hidden variable theories wll always satisfy $$|C| \leq 2$$. This is known as the CHSH inequality.
+This has the property the property that correlations provided by local hidden variable theories will always satisfy $$|C| \leq 2$$. This is known as the CHSH inequality.
 
 It is simple to show that this inequality must be true if the theory obeys the following two assumptions, _locality_ and _realism_:
 

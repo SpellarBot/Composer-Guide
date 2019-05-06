@@ -38,7 +38,7 @@ For any point, the distance from the surface of the sphere can be determined by 
 
 So now we have three numbers that can each be no greater than 1, no less than -1, and for which the sum of the squares is always 1. All exactly the same as $$\langle X \rangle$$,  $$\langle Y \rangle$$ and  $$\langle Z \rangle$$. They even have pretty much the same names as these values. 
 
-Because of this correspondence, we can apply all our existing knowledge and intuition about balls to our understanding of qubits. Specifcially, we can visualize any single qubit state as a point on the surface of a sphere. We call this the Bloch sphere.
+Because of this correspondence, we can apply all our existing knowledge and intuition about balls to our understanding of qubits. Specifically, we can visualize any single qubit state as a point on the surface of a sphere. We call this the Bloch sphere.
 
 ![](../.gitbook/assets/image.png)
 
